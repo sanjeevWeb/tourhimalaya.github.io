@@ -359,6 +359,9 @@ p {
 }
 
 @media (max-width:550px){
+	.navBar .logo {
+		margin-top:50px;
+	}
 	.secClass .rows{
 		flex-direction:column;
 	}
