@@ -1,0 +1,398 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body,html {
+	overflow-x:hidden;
+}
+
+.navBar {
+	position:absolute;
+	top:0;
+	left:0;
+	display:flex;
+	width:100%;
+	justify-content:space-between;
+	color:white;
+	z-index:1;
+	/* align-items:center; */
+}
+
+.logo {
+	/* color:white; */
+	/* font-size:20px; */
+	font-weight:bold;
+}
+
+.navlinks{
+	display:flex;
+	align-items:center;
+}
+
+.navlinks li {
+	margin:0 25px;
+}
+
+a {
+	text-decoration:none;
+}
+
+ul li {
+	list-style:none;
+}
+
+#menuBtn {
+	position:absolute;
+	width:30px;
+	height:50px;
+	top:30px;
+	right:30px;
+	cursor:pointer;
+	display:none;
+}
+
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	width:100vw;
+	height:100%;
+	background-image:url('./explore3.jpg');
+	background-position:bottom;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.header-content {
+	margin-bottom:150px;
+	color:white;
+	text-align:center;
+}
+
+.header-content h2 {
+	font-size:4vmin;
+	/* background-color:#00007C; */
+}
+
+.line {
+	width:150px;
+	height:4px;
+	background: red;
+	margin: 10px auto;
+}
+
+.header-content h1 {
+	font-size:7vmin;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+.navlinks li a {
+	color:white;
+}
+.btn {
+	padding:8px 15px;
+	background-color:#fc036b;
+	border-radius:30px;
+	color:white;
+}
+
+.secClass {
+	width:80%;
+	margin:680px auto 0 auto;
+	overflow-x:hidden;
+	/* z-index:999; */
+}
+
+.eventTitle {
+	color: #00007C;
+	text-align:center;
+	font-size:4vmin;
+}
+
+.rows {
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	/* background-color:cyan; */
+	/* border:1px solid yellow; */
+	overflow-x:hidden;
+}
+
+.rows .cols {
+	/* width:90%; */
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	/* justify-content:center; */
+	/* border:1px solid red; */
+}
+
+.rows .cols img {
+	width: 85%;
+}
+
+/* .secClass .rows { */
+	/* margin-top: 50px; */
+/* } */
+
+h4 {
+	font-size:3vmin;
+	color: #00007C;
+	margin: 20px auto;
+}
+
+p {
+	color:#5F6368;
+	padding:0px 40px;
+	
+}
+
+.secClass .btn{
+	margin-top: 30px;
+}
+
+.explore {
+	width:75%;
+	height:80vh;
+	background-image:url('./hiking8.jpg');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	display:flex;
+	/* flex-direction:column; */
+	align-items:center;
+	/* justify-content:center; */
+	margin:50px auto;
+}
+
+.explore-content {
+	width:50%;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+/* .explore img { */
+	/* width:70%; */
+	/* margin:30px auto; */
+	
+/* } */
+
+.explore-content h1 {
+	font-size:7vmin;
+	/* color:white; */
+	margin-left:40px;
+}
+
+.explore-content .line {
+	margin-bottom:30px;
+}
+
+.explore-content p {
+	color:white;
+	/* margin-top:30px; */
+}
+
+.explore-content .btn {
+	margin-top:40px;
+}
+
+.tours {
+	width:80%;
+	margin:50px auto;
+}
+
+.content-col {
+	width:40%;
+}
+
+.image-col {
+	width:60%;
+}
+/* .tours .rows .cols { */
+	/* width: 50%; */
+/* } */
+
+.tours .image-gallery {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+.image-gallery img {
+	max-width:270px;
+	/* height:200px; */
+	margin:10px;
+}
+
+.content-col h1 {
+	font-size:7vmin;
+	color:  #00007C;
+	text-transform:uppercase;
+}
+
+.content-col .line {
+	margin-left:0;
+}
+
+.content-col p{
+	padding:0;
+	margin:20px auto;
+}
+
+.content-col .btn{
+	margin-left:-100px;;
+}
+
+.footer {
+	width:100%;
+	height:100px;
+	display:flex;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	margin:0 auto;
+	background-color: #00007C;
+	/* color:fff; */
+}
+
+.footer p {
+	color:white;
+}
+
+@media screen and (max-width:1115px){
+	.tours {
+		width:80%;
+		margin:30px auto;
+		
+	}
+	.tours .rows {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}
+	
+	.tours .cols {
+		width:100%;
+	}
+	
+	.content-col {
+		width:75%;
+	}
+	
+	.image-col {
+		width:90%;
+		margin:0 auto;
+	}
+	
+	.tours .image-gallery {
+		width:90%;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	.image-gallery img {
+		max-width:60%;
+		margin:10px;
+	}
+}
+@media screen and (max-width:768px){
+	
+	#menuBtn {
+		display:block;
+	}
+	.navBar {
+		padding:0;
+	}
+	.logo {
+		position:absolute;
+		top:30px;
+		left:30px;
+	}
+	
+	.navlinks {
+		flex-direction:column;
+		width:100%;
+		height:100vh;
+		justify-content:center;
+		background-color:#337AB7;
+		margin-top:-900px;
+		transition:all 0.5s ease;
+	}
+	
+	.mobileMenu {
+		margin-top:0px;
+	}
+	
+	.navlinks li {
+		margin:25px auto;
+	}
+	
+	.tours .rows{
+		flex-direction:column;
+	}
+	
+	.content-col {
+		width:100%;
+	}
+	
+	.image-gallery {
+		width:100%;
+	}
+	
+	.image-gallery img {
+		width:80%;
+		align-items:center;
+	}
+}
+
+@media (max-width:550px){
+	.secClass .rows{
+		flex-direction:column;
+	}
+	
+	.secClass .rows .cols .btn {
+		margin-bottom:20px;
+	}
+	
+	.tours {
+		margin-top:40px;
+	}
+	
+	.explore-content{
+		width:100%;
+	}
+	
+	.footer {
+		width:100%;
+		height:auto;
+	}
+}
+
+/* animation */
+
+img {
+	transition:transform .3s ease;
+}
+
+img:hover {
+	transform:scale(1.1);
+}
+
+.btn:hover {
+	background-color:white;
+	color: #fc036b;
+	border:1px solid #fc036b;
+}
